@@ -16,11 +16,8 @@ const Todo = () => {
  
     if (stored) {
       const parsed = JSON.parse(stored);
-      console.log("Loaded todos:", parsed);
       setTodos(parsed);
     } else {
-      console.log("No todos found for this user");
-
       setTodos([]);
     }
  
